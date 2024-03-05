@@ -12,13 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4531e6b11e23a8f4fbc3cc300cb25fb1, type: 3}
   m_Name: Weapon_1
   m_EditorClassIdentifier: 
-  weaponName: 
-  rateOfFire: 0
-  maxMagazineSize: 0
-  baseDamage: 0
+  weaponType: 1
+  weaponName: Assault Rifle
+  rateOfFire: 0.2
+  maxMagazineSize: 30
+  baseDamage: 15
+  bulletForce: 10
+  reloadTime: 5
   xRecoilRot: 0
   yRecoilRot: 0
   zRecoilRot: 0
   xAimRecoilRot: 0
   yAimRecoilRot: 0
   zAimRecoilRot: 0
+  spreadAmount: 0.2

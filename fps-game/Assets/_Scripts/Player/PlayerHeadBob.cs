@@ -36,8 +36,8 @@ public class PlayerHeadBob : MonoBehaviour
 
     private void CheckMotion()
     {
-         speed = new Vector3(playerMovement._move.x, 0, playerMovement._move.z).magnitude;
-        if (!playerMovement._characterController.isGrounded) return;
+        speed = new Vector3(playerMovement._move.x, 0, playerMovement._move.z).magnitude;
+        if (!playerMovement.isGrounded) return;
         GenerateHeadBob();
     }
 

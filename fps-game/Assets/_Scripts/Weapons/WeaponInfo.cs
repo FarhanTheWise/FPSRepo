@@ -6,10 +6,13 @@ using UnityEngine;
 public class WeaponInfo : ScriptableObject
 {
     [Header("Basic Weapon States")]
+    public WeaponType weaponType;
     public string weaponName;
     public float rateOfFire;
     public int maxMagazineSize;
     public float baseDamage;
+    public float bulletForce;
+    public float reloadTime;
 
     //procedural weapon stats
     [Header("Procedural Recoil")]
@@ -26,9 +29,15 @@ public class WeaponInfo : ScriptableObject
     public float yAimRecoilRot;
     public float zAimRecoilRot;
 
+    [Space()]
+
+    //procedural spreed
+    [Header("Procedural Recoil")]
+    public float spreadAmount;
+
     //procedural kick
 
-    public enum WeaponFiringMode
+    public enum WeaponType
     {
         SemiAutomatic = 0,
         Automatic = 1,
